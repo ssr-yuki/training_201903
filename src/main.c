@@ -41,7 +41,7 @@ void calcDifference(Matrix *A_ptr, Matrix *B_ptr) {
         row    = A_ptr->row;
         column = A_ptr->column;
     } else {
-        printf("Not calculable: +");
+        printf("Not calculable: -");
         return;
     }
 
