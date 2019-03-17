@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 #include "constant.h"
 
@@ -12,13 +13,11 @@ typedef struct matrix {
     double*      data;
 } Matrix;
 
-void calcSum(Matrix*, Matrix*);
-void calcDifference(Matrix*, Matrix*);
-void calcProduct(Matrix*, Matrix*);
-double calcDeterminant(double*, int);
-double calcInverse(double*, int);
-
-
+void   calcSum(Matrix*, Matrix*);
+void   calcDifference(Matrix*, Matrix*);
+void   calcProduct(Matrix*, Matrix*);
+double calcDeterminant(Matrix*);
+void   calcInverse(Matrix*);
 
 #endif
 
