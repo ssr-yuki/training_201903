@@ -16,6 +16,7 @@ typedef struct matrix {
 void   calcSum(Matrix*, Matrix*);
 void   calcDifference(Matrix*, Matrix*);
 void   calcProduct(Matrix*, Matrix*);
+double calcCofactor(Matrix*, unsigned int, unsigned int);
 double calcDeterminant(Matrix*);
 void   calcInverse(Matrix*);
 
