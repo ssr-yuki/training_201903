@@ -33,6 +33,8 @@ void calcSum(Matrix *A_ptr, Matrix *B_ptr) {
         printf("\n");
     }
 
+    free(C);
+
     return;
 }
 
@@ -56,6 +58,8 @@ void calcDifference(Matrix *A_ptr, Matrix *B_ptr) {
         }
         printf("\n");
     }
+
+    free(C);
 
     return;
 }
@@ -85,6 +89,8 @@ void calcProduct(Matrix *A_ptr, Matrix *B_ptr) {
         }
         printf("\n");
     }
+
+    free(C);
 
     return;
 }
@@ -165,7 +171,7 @@ void calcInverse(Matrix* A_ptr) {
     }
 
     double det = calcDeterminant(A_ptr);
-    printf("det:\n\t%le\n", det);
+    printf("Determinant:\n\t%le\n", det);
     if(det == 0.0) {
         printf("Inverse Matrix does not exist\n");
         return;
@@ -185,6 +191,8 @@ void calcInverse(Matrix* A_ptr) {
         }
         printf("\n");
     }
+
+    free(C);
 
     return;
 }
